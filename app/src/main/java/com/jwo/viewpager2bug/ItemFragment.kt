@@ -16,6 +16,7 @@ class ItemFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding = FragmentItemBinding.inflate(inflater, container, false)
+        binding.parent.layoutTransition.setAnimateParentHierarchy(false)
         return binding.root
     }
 
